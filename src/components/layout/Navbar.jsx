@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
-function Navbar() {
+import PropTypes from "prop-types";
+function Navbar({ title }) {
   return (
-    <nav className="navbar mb-2 shadow-lg bg-neutral-focus text-neutral-content rounded-box">
+    <nav className="navbar mb-2 shadow-lg bg-neutral-focus text-neutral-content rounded-box px-4 mt-2 mx-3 justify-between">
       <div className="px-2 mx-2 navbar-start">
-        <span className="text-lg font-bold">Daniel Ddungu</span>
+        <Link to="/" className="text-lg font-bold">
+          {title}
+        </Link>
       </div>
       <div className="hidden px-2 mx-2 navbar-center lg:flex">
-        <div className="flex items-stretch">
+        <div className="flex ">
           <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
             Home
           </Link>
@@ -27,40 +30,82 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end  ">
         <button className="btn btn-square btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-6 h-6 stroke-current"
+          <a
+            href="https://github.com/DanielDdungu"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <path
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-6 h-6 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+        </button>
+
+        <button className="btn btn-square btn-ghost">
+          <a
+            href="https://www.linkedin.com/in/danielddungu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              className="h-8 w-8 text-blue-500"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-            ></path>
-          </svg>
+            >
+              {" "}
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />{" "}
+              <rect x="2" y="9" width="4" height="12" />{" "}
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
         </button>
         <button className="btn btn-square btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-6 h-6 stroke-current"
+          <a
+            href="https://twitter.com/daniel_ddungu"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <path
+            <svg
+              className="h-8 w-8 text-blue-500"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            ></path>
-          </svg>
+            >
+              {" "}
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+            </svg>
+          </a>
         </button>
       </div>
     </nav>
   );
 }
+
+Navbar.defaultProps = {
+  title: "Daniel Ddungu",
+};
+
+Navbar.propTypes = {
+  title: PropTypes.string,
+};
 
 export default Navbar;

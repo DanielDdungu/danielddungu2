@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="flex flex-col justify-between h-screenshot">
         <Navbar />
-        <main className="conatiner">
+        <main className="conatiner  px-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
