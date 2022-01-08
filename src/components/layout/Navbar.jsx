@@ -46,18 +46,17 @@ function Navbar() {
       </div>
       {/* RESPONSIVE MOBILE MENU*/}
       <div className="md:hidden flex items-end">
-        <button className="outline-none menu-button">
+        <button className="outline-none menu-button justify-end ...">
           <FaBars />
         </button>
       </div>
       {/* RESPONSIVE MOBILE MENU*/}
-
       <div className="hidden mobile-menu">
-        <ul class="">
-          <li class="active">
+        <ul className="">
+          <li className="active">
             <a
               href="nav.html"
-              class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold"
+              className="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold"
             >
               Home
             </a>
@@ -65,7 +64,7 @@ function Navbar() {
           <li>
             <a
               href="#services"
-              class="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
+              className="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
             >
               Services
             </a>
@@ -73,7 +72,7 @@ function Navbar() {
           <li>
             <a
               href="#About"
-              class="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
+              className="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
             >
               About
             </a>
@@ -81,7 +80,7 @@ function Navbar() {
           <li>
             <a
               href="#Contact Us"
-              class="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
+              className="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
             >
               Contact Us
             </a>
