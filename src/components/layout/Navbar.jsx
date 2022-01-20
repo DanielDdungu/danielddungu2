@@ -82,7 +82,7 @@ function Navbar({ title }) {
 }
 
 Navbar.defaultProps = {
-  title: "Daniel Ddungu",
+  title: "DANIEL DDUNGU",
 };
 
 Navbar.propTypes = {
