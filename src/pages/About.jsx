@@ -1,16 +1,16 @@
-import about from "../components/layout/assets/about.jpg";
+import daniel from "../components/layout/assets/daniel.png";
 function About() {
   return (
     <>
       <div className="min-h-screen bg-gray-800 rounded-box p-8">
         <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2">
           {/**LEFT SIDE */}
-          <div className="md:flex md:flex-col md:justify-center">
+          <div className="md:flex md:flex-col md:justify-center lg:pt-5">
             <h2 className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mb-4">
               I am Daniel Ddungu
             </h2>
 
-            <p className="md:text-lg text-white-700 text-justify pr-5 indent-8">
+            <p className="md:text-lg text-white-700 text-justify indent-8">
               A skilled Front-End Developer with extensive technical expertise
               in planning and developing websites across multiple products and
               organisations and with professional working knowledge of web
@@ -24,8 +24,8 @@ function About() {
 
           {/**LEFT SIDE */}
           <div className=" card-bordy">
-            <div className="w-full h-64 rounded-lg shadow-2xl bg-black md:bg-purple-400">
-              hi
+            <div className="w-full h-64 rounded-lg">
+              <img src={daniel} alt={daniel} />
             </div>
           </div>
         </div>

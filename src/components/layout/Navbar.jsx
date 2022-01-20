@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="px-4 ">
-        <div className="px-2 rounded-box h-14  text-sky-400 items-center mb-2 flex flex-row justify-between">
+        <div className=" mt-3 px-2 rounded-box h-14 bg-gray-800 text-white items-center mb-2 flex flex-row justify-between">
           <div className="brand-logo text-sm font-extrabold px-2">
             Daniel Ddungu
           </div>
@@ -21,10 +21,7 @@ export default function Navbar() {
             {/**Main List */}
             <ul className="hidden lg:menu-list lg:flex lg:flex-row text-xs font-bold ">
               <li className="menu-list-item">
-                <NavLink
-                  to="/"
-                  className="btn btn-ghost btn-sm rounded-btn underline"
-                >
+                <NavLink to="/" className="btn btn-ghost btn-sm rounded-btn">
                   Home
                 </NavLink>
               </li>
