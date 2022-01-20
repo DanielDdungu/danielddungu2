@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import React, { useState } from "react";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="px-4 ">
-        <div className="px-2 rounded-box h-14 bg-gray-800 text-sky-400 items-center mb-2 flex flex-row justify-between">
+        <div className="px-2 rounded-box h-14  text-sky-400 items-center mb-2 flex flex-row justify-between">
           <div className="brand-logo text-sm font-extrabold px-2">
             Daniel Ddungu
           </div>
@@ -21,43 +21,52 @@ export default function Navbar() {
             {/**Main List */}
             <ul className="hidden lg:menu-list lg:flex lg:flex-row text-xs font-bold ">
               <li className="menu-list-item">
-                <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
+                <NavLink
+                  to="/"
+                  className="btn btn-ghost btn-sm rounded-btn underline"
+                >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="menu-list-item">
-                <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
+                <NavLink
+                  to="/about"
+                  className="btn btn-ghost btn-sm rounded-btn"
+                >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li className="menu-list-item">
-                <Link
+                <NavLink
                   to="/services"
                   className="btn btn-ghost btn-sm rounded-btn"
                 >
                   Services
-                </Link>
+                </NavLink>
               </li>
               <li className="menu-list-item">
-                <Link
+                <NavLink
                   to="/portfolio"
                   className="btn btn-ghost btn-sm rounded-btn"
                 >
                   Portfolio
-                </Link>
+                </NavLink>
               </li>
               <li className="menu-list-item">
-                <Link to="/resume" className="btn btn-ghost btn-sm rounded-btn">
+                <NavLink
+                  to="/resume"
+                  className="btn btn-ghost btn-sm rounded-btn"
+                >
                   Resume
-                </Link>
+                </NavLink>
               </li>
               <li className="menu-list-item">
-                <Link
+                <NavLink
                   to="/contact"
                   className="btn btn-ghost btn-sm rounded-btn"
                 >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
 
@@ -86,22 +95,22 @@ function SideMenu() {
     <div className=" menu p-3 bg-neutral rounded-xl lg:hidden top-14 z-40 absolute inset-x-4 h-min ... uppercase">
       <ul className="menu-list flex flex-col text-xs font-bold ">
         <li className="menu-list-item ">
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li className="menu-list-item ">
-          <Link to="/about">About</Link>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li className="menu-list-item ">
-          <Link to="/services">Services</Link>
+          <NavLink to="/services">Services</NavLink>
         </li>
         <li className="menu-list-item ">
-          <Link to="/portfolio">Portfolio</Link>
+          <NavLink to="/portfolio">Portfolio</NavLink>
         </li>
         <li className="menu-list-item ">
-          <Link to="/resume">Resume</Link>
+          <NavLink to="/resume">Resume</NavLink>
         </li>
         <li className="menu-list-item ">
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
     </div>

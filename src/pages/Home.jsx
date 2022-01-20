@@ -1,4 +1,4 @@
-import daniel from "../components/layout/assets/daniel.jpg";
+import daniel from "../components/layout/assets/daniel.png";
 
 import ReactTypingEffect from "react-typing-effect";
 import { Link } from "react-router-dom";
@@ -91,11 +91,13 @@ function Home() {
       />
       <div className="flex-col hero-content lg:flex-row-reverse">
         <div>
-          <img src={daniel} className=" rounded-lg shadow-2xl" alt="Logo" />
+          <img src={daniel} className="" alt="Logo" />
         </div>
 
         <div>
-          <h1 className="mb-5 text-5xl font-bold">I'm Daniel</h1>
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
+            I'm Daniel
+          </h1>
           <p className="mb-5 font-medium ... md:text-sm">
             Welcome to my world of digital tranformation. I am in this with my
             heart, not my ego’s, &nbsp; I want to tranform the world a little
