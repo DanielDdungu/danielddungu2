@@ -1,94 +1,109 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedinIn, FaTwitter, FaBars } from "react-icons/fa";
 
-function Navbar() {
+import React, { useState } from "react";
+import { HiMenu, HiOutlineX } from "react-icons/hi";
+
+export default function Navbar() {
+  // REACT HOOKS
+  const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
+  const showSideMenu = () => {
+    isSideMenuOpen ? setisSideMenuOpen(false) : setisSideMenuOpen(true);
+  };
+
   return (
-    <nav className="navbar mb-2 shadow-lg bg-neutral-focus text-neutral-content rounded-box mx-5 mt-1">
-      <div className="px-2 mx-2 navbar-start">
-        <span className="text-lg font-bold">Daniel Ddungu</span>
-      </div>
-      {/* RESPONSIVE MOBILE MENU*/}
-      <div className="hidden px-2 mx-2 navbar-center lg:flex">
-        <div className="flex items-stretch">
-          <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
-            Home
-          </Link>
-          <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
-            About
-          </Link>
-          <Link to="/services" className="btn btn-ghost btn-sm rounded-btn">
-            Services
-          </Link>
-          <Link to="/portfolio" className="btn btn-ghost btn-sm rounded-btn">
-            Portfolio
-          </Link>
-          <Link to="/resume" className="btn btn-ghost btn-sm rounded-btn">
-            Resume
-          </Link>
-          <Link to="/contact" className="btn btn-ghost btn-sm rounded-btn">
-            Contact
-          </Link>
-        </div>
-      </div>
+    <>
+      <nav className="px-4 ">
+        <div className="px-2 rounded-box h-14 bg-gray-800 text-sky-400 items-center mb-2 flex flex-row justify-between">
+          <div className="brand-logo text-sm font-extrabold px-2">
+            Daniel Ddungu
+          </div>
+          <div className="">
+            {/**Main List */}
+            <ul className="hidden lg:menu-list lg:flex lg:flex-row text-xs font-bold ">
+              <li className="menu-list-item">
+                <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
+                  Home
+                </Link>
+              </li>
+              <li className="menu-list-item">
+                <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
+                  About
+                </Link>
+              </li>
+              <li className="menu-list-item">
+                <Link
+                  to="/services"
+                  className="btn btn-ghost btn-sm rounded-btn"
+                >
+                  Services
+                </Link>
+              </li>
+              <li className="menu-list-item">
+                <Link
+                  to="/portfolio"
+                  className="btn btn-ghost btn-sm rounded-btn"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li className="menu-list-item">
+                <Link to="/resume" className="btn btn-ghost btn-sm rounded-btn">
+                  Resume
+                </Link>
+              </li>
+              <li className="menu-list-item">
+                <Link
+                  to="/contact"
+                  className="btn btn-ghost btn-sm rounded-btn"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
 
-      {/* RESPONSIVE MOBILE MENU*/}
-      <div className="navbar-end hidden px-2 mx-2 lg:flex">
-        <button className="btn btn-square btn-ghost">
-          <FaGithub />
-        </button>
-        <button className="btn btn-square btn-ghost">
-          <FaLinkedinIn />
-        </button>
-        <button className="btn btn-square btn-ghost">
-          <FaTwitter />
-        </button>
-      </div>
-      {/* RESPONSIVE MOBILE MENU*/}
-      <div className="md:hidden flex items-end">
-        <button className="outline-none menu-button justify-end ...">
-          <FaBars />
-        </button>
-      </div>
-      {/* RESPONSIVE MOBILE MENU*/}
-      <div className="hidden mobile-menu">
-        <ul className="">
-          <li className="active">
-            <a
-              href="nav.html"
-              className="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold"
+            <button
+              onClick={() => {
+                showSideMenu();
+              }}
+              className=" lg:hidden menu-button btn btn-square btn-ghost"
             >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#services"
-              className="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              href="#About"
-              className="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#Contact Us"
-              className="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300"
-            >
-              Contact Us
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+              {isSideMenuOpen ? (
+                <HiOutlineX className="w-10 h-10  px-2" />
+              ) : (
+                <HiMenu className="w-10 h-10  px-2" />
+              )}
+            </button>
+            {isSideMenuOpen ? SideMenu() : ""}
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
 
-export default Navbar;
+function SideMenu() {
+  return (
+    <div className=" menu p-3 bg-neutral rounded-xl lg:hidden top-14 z-40 absolute inset-x-4 h-min ... uppercase">
+      <ul className="menu-list flex flex-col text-xs font-bold ">
+        <li className="menu-list-item ">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="menu-list-item ">
+          <Link to="/about">About</Link>
+        </li>
+        <li className="menu-list-item ">
+          <Link to="/services">Services</Link>
+        </li>
+        <li className="menu-list-item ">
+          <Link to="/portfolio">Portfolio</Link>
+        </li>
+        <li className="menu-list-item ">
+          <Link to="/resume">Resume</Link>
+        </li>
+        <li className="menu-list-item ">
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </div>
+  );
+}
