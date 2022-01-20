@@ -9,7 +9,6 @@ function Home() {
     <div className="hero min-h-screen bg-gray-800 rounded-box">
       <Particles
         className="lg:visible md:invisible"
-        id="tsparticles"
         options={{
           background: {
             color: {
