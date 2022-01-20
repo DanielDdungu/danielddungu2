@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import React, { useState } from "react";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
-
-export default function Navbar() {
+function Navbar({ title }) {
   // REACT HOOKS
   const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
   const showSideMenu = () => {
@@ -15,55 +15,49 @@ export default function Navbar() {
       <nav className="px-4 ">
         <div className=" mt-3 px-2 rounded-box h-14 bg-gray-800 text-white items-center mb-2 flex flex-row justify-between">
           <div className="brand-logo text-sm font-extrabold px-2">
-            Daniel Ddungu
+            <Link to="/">{title}</Link>
           </div>
           <div className="">
             {/**Main List */}
             <ul className="hidden lg:menu-list lg:flex lg:flex-row text-xs font-bold ">
               <li className="menu-list-item">
-                <NavLink to="/" className="btn btn-ghost btn-sm rounded-btn">
+                <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
                   Home
-                </NavLink>
+                </Link>
               </li>
               <li className="menu-list-item">
-                <NavLink
-                  to="/about"
-                  className="btn btn-ghost btn-sm rounded-btn"
-                >
+                <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
                   About
-                </NavLink>
+                </Link>
               </li>
               <li className="menu-list-item">
-                <NavLink
+                <Link
                   to="/services"
                   className="btn btn-ghost btn-sm rounded-btn"
                 >
                   Services
-                </NavLink>
+                </Link>
               </li>
               <li className="menu-list-item">
-                <NavLink
+                <Link
                   to="/portfolio"
                   className="btn btn-ghost btn-sm rounded-btn"
                 >
                   Portfolio
-                </NavLink>
+                </Link>
               </li>
               <li className="menu-list-item">
-                <NavLink
-                  to="/resume"
-                  className="btn btn-ghost btn-sm rounded-btn"
-                >
+                <Link to="/resume" className="btn btn-ghost btn-sm rounded-btn">
                   Resume
-                </NavLink>
+                </Link>
               </li>
               <li className="menu-list-item">
-                <NavLink
+                <Link
                   to="/contact"
                   className="btn btn-ghost btn-sm rounded-btn"
                 >
                   Contact
-                </NavLink>
+                </Link>
               </li>
             </ul>
 
@@ -87,27 +81,36 @@ export default function Navbar() {
   );
 }
 
+Navbar.defaultProps = {
+  title: "Daniel Ddungu",
+};
+
+Navbar.propTypes = {
+  title: PropTypes.string,
+};
+export default Navbar;
+
 function SideMenu() {
   return (
     <div className=" menu p-3 bg-neutral rounded-xl lg:hidden top-14 z-40 absolute inset-x-4 h-min ... uppercase">
       <ul className="menu-list flex flex-col text-xs font-bold ">
         <li className="menu-list-item ">
-          <NavLink to="/">Home</NavLink>
+          <Link to="/">Home</Link>
         </li>
         <li className="menu-list-item ">
-          <NavLink to="/about">About</NavLink>
+          <Link to="/about">About</Link>
         </li>
         <li className="menu-list-item ">
-          <NavLink to="/services">Services</NavLink>
+          <Link to="/services">Services</Link>
         </li>
         <li className="menu-list-item ">
-          <NavLink to="/portfolio">Portfolio</NavLink>
+          <Link to="/portfolio">Portfolio</Link>
         </li>
         <li className="menu-list-item ">
-          <NavLink to="/resume">Resume</NavLink>
+          <Link to="/resume">Resume</Link>
         </li>
         <li className="menu-list-item ">
-          <NavLink to="/contact">Contact</NavLink>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>
