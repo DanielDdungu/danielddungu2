@@ -6,8 +6,18 @@ import {
   FaReact,
   FaSass,
   FaNodeJs,
+  FaGitAlt,
 } from "react-icons/fa";
-import { SiRedux, SiTypescript, SiJest } from "react-icons/si";
+import {
+  SiRedux,
+  SiTypescript,
+  SiPhp,
+  SiWoocommerce,
+  SiGoogleanalytics,
+  SiTailwindcss,
+  SiBootstrap,
+  SiNpm,
+} from "react-icons/si";
 function About() {
   return (
     <>
@@ -141,40 +151,40 @@ function About() {
         <p className="pt-3 pl-3">INTERESTS</p>
         <div class=" card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 ">
           <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
-            <FaHtml5 size={30} className=" " color={"#F16529"} />
-            <p className="pl-3">HTML5</p>
-          </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
-            <FaCss3 size={30} color={"#264de4"} />
-            <p className="pl-3">CSS3</p>
-          </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ...">
-            <FaJsSquare size={30} color={"#f0db4f"} />
-            <p className="pl-3">JavaScript</p>
-          </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
-            <FaReact size={30} color={"#61DBFB"} />
-            <p className="pl-3">React</p>
+            <FaGitAlt size={30} color={"#f34f29"} />
+            <p className="pl-6">Git</p>
           </div>
           <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
-            <SiRedux size={30} color={"#764abc"} />
-            <p className="pl-3">Redux</p>
+            <SiTailwindcss size={30} className="fill-blue-500 ..." />
+            <p className="pl-6">Tailwindcss</p>
           </div>
           <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiTypescript size={30} color={"#007acc"} />
-            <p className="pl-3">Typescript</p>
+            <p className="pl-6">Typescript</p>
           </div>
           <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
-            <FaSass size={30} color={"#cd6799"} />
-            <p className="pl-3">Sass</p>
+            <SiBootstrap size={30} color={"#0275d8"} />
+            <p className="pl-6">Bootstrap</p>
           </div>
           <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaNodeJs size={30} color={"#303030"} />
-            <p className="pl-3">NodeJS</p>
+            <p className="pl-6">NodeJS</p>
           </div>
           <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
-            <SiJest size={25} color={"#0077b5"} />
-            <p className="pl-3">Jest</p>
+            <SiNpm size={25} color={"#CC3534"} />
+            <p className="pl-6">NPM</p>
+          </div>
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+            <SiPhp size={30} className=" " color={"#8993be"} />
+            <p className="pl-6">PHP</p>
+          </div>
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+            <SiWoocommerce size={30} color={"#764abc"} />
+            <p className="pl-6">Woocommerce</p>
+          </div>
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ...">
+            <SiGoogleanalytics size={30} color={"#FFC517"} />
+            <p className="pl-6">Google Analytics</p>
           </div>
         </div>
       </div>
