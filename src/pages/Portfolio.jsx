@@ -6,15 +6,15 @@ import coming from "../components/layout/assets/projects/coming.png";
 
 function Portfolio() {
   return (
-    <div className="w-full bg-gray-800 rounded-box">
+    <div className="w-full bg-black rounded-box">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 ">
         <div className="text-center pb-12">
-          <h2 className="text-base font-bold text-indigo-600">
+          <h2 className="text-base font-bold text-white">
             We have the best equipment in the market
           </h2>
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
             Check a few of my awesome projects
-          </h1>
+          </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">

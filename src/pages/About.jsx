@@ -26,19 +26,19 @@ function About() {
         <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2">
           {/**LEFT SIDE */}
           <div className="md:flex md:flex-col md:justify-center lg:pt-5">
-            <h2 className="text-white text-xl md:text-2xl lg:text-4xl font-bold">
+            <h2 className="text-white text-xl md:text-2xl lg:text-4xl font-bold mb-1">
               I am Daniel Ddungu
             </h2>
 
-            <p className="md:text-base text-white-700 text-justify indent-6">
-              A skilled Front-End Developer with extensive technical expertise
-              in planning and developing websites across multiple products and
-              organisations and with professional working knowledge of web
-              applications, programming languages, and web services such as
-              HTML, HTML5, CSS, CSS3, JavaScript, Security Principles and User
-              Interface Design(UI). Proficiency with Content Management Systems
-              (WordPress+Woocommerce and Prestashop), E-Commerce and Digital
-              Marketing & Social Media Management.
+            <p className="md:text-base text-white-700 text-justify mb-2">
+              Front-End Developer with technical expertise in designing and
+              developing web applications using HTML5, CSS3, JavaScript and
+              React Js.
+            </p>
+            <p className="md:text-base text-white-700 text-justify mb-2">
+              Proficient with Content Management Systems (Wordpress+Woo-commerce
+              and Prestashop), E-Commerce and Digital Marketing & Social Media
+              Management.
             </p>
           </div>
 
@@ -150,39 +150,39 @@ function About() {
       <div className="bg-black my-3 rounded-box">
         <p className="pt-3 pl-3">INTERESTS</p>
         <div class=" card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 ">
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className="flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaGitAlt size={30} color={"#f34f29"} />
             <p className="pl-6">Git</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className=" flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiTailwindcss size={30} className="fill-blue-500 ..." />
             <p className="pl-6">Tailwindcss</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className=" flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiTypescript size={30} color={"#007acc"} />
             <p className="pl-6">Typescript</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className=" flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiBootstrap size={30} color={"#0275d8"} />
             <p className="pl-6">Bootstrap</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className="flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaNodeJs size={30} color={"#303030"} />
             <p className="pl-6">NodeJS</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className=" flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiNpm size={25} color={"#CC3534"} />
             <p className="pl-6">NPM</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className="flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiPhp size={30} className=" " color={"#8993be"} />
             <p className="pl-6">PHP</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
+          <div className="flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiWoocommerce size={30} color={"#764abc"} />
             <p className="pl-6">Woocommerce</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ...">
+          <div className="flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ...">
             <SiGoogleanalytics size={30} color={"#FFC517"} />
             <p className="pl-6">Google Analytics</p>
           </div>

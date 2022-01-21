@@ -5,7 +5,7 @@ import ecommere from "../components/layout/assets/ecommere.jpg";
 
 function Services() {
   return (
-    <div className="conainer  bg-gray-800 rounded-box">
+    <div className="conainer  bg-black rounded-box">
       <div className="">
         <p className="mb-5 text-2xl font-bold pt-6 pl-8">MY SERVICES</p>
       </div>
