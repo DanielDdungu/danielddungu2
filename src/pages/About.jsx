@@ -140,39 +140,39 @@ function About() {
       <div className="bg-black my-3 rounded-box">
         <p className="pt-3 pl-3">INTERESTS</p>
         <div class=" card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 ">
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaHtml5 size={30} className=" " color={"#F16529"} />
             <p className="pl-3">HTML5</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaCss3 size={30} color={"#264de4"} />
             <p className="pl-3">CSS3</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ...hover:bg-base-100">
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ...">
             <FaJsSquare size={30} color={"#f0db4f"} />
             <p className="pl-3">JavaScript</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaReact size={30} color={"#61DBFB"} />
             <p className="pl-3">React</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiRedux size={30} color={"#764abc"} />
             <p className="pl-3">Redux</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiTypescript size={30} color={"#007acc"} />
             <p className="pl-3">Typescript</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaSass size={30} color={"#cd6799"} />
             <p className="pl-3">Sass</p>
           </div>
-          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className="flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <FaNodeJs size={30} color={"#303030"} />
             <p className="pl-3">NodeJS</p>
           </div>
-          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... hover:bg-base-100">
+          <div className=" flex flex-auto glass p-3 rounded-md pl-6 drop-shadow-2xl ... ">
             <SiJest size={25} color={"#0077b5"} />
             <p className="pl-3">Jest</p>
           </div>
