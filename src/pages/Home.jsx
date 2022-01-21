@@ -35,6 +35,7 @@ const Home = () => {
           </p>
           <p className="mb-5 font-bold ... text-white">
             I AM PASSIONATE ABOUT..
+            <br />
             <ReactTypingEffect
               className=""
               text={[
