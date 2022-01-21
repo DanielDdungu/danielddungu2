@@ -10,7 +10,7 @@ function Services() {
         <p className="mb-5 text-2xl font-bold pt-6 pl-8">MY SERVICES</p>
       </div>
       <div className="p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3">
-        <div className="drop-shadow-2xl ... glass rounded-box hover:bg-base-100">
+        <div className="drop-shadow-2xl ... glass rounded-box hover:bg-base-100 ">
           <div className="">
             <img
               className="object-scale-down h-50 w-98 ... rounded-t-2xl"

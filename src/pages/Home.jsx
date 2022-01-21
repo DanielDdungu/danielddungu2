@@ -6,6 +6,8 @@ import background from "../components/layout/assets/background.webm";
 import ReactTypingEffect from "react-typing-effect";
 import { Link } from "react-router-dom";
 
+//import { motion } from "framer-motion";
+
 const Home = () => {
   return (
     <div className="hero min-h-screen bg-gray-800 rounded-box">

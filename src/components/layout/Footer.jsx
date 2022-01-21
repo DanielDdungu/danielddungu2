@@ -6,7 +6,7 @@ import { SiDogecoin } from "react-icons/si";
 function Footer() {
   return (
     <div className="px-4  mt-2">
-      <footer class="py-10 footer bg-gray-800 text-primary-content footer-center rounded-box">
+      <footer class="py-10 footer bg-black text-primary-content footer-center rounded-box">
         <div>
           <SiDogecoin />
           <p class="font-bold">

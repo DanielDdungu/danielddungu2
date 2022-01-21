@@ -1,7 +1,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        128: "32rem",
+      },
+      cursor: {
+        fancy: "url(hand.cur), pointer",
+      },
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }

@@ -13,20 +13,24 @@ function Navbar({ title }) {
   return (
     <>
       <nav className="px-4 ">
-        <div className=" mt-3 px-2 rounded-box h-14 bg-gray-800 text-white items-center mb-2 flex flex-row justify-between">
-          <div className="brand-logo text-sm font-extrabold px-2">
+        <div className=" mt-3 px-2 rounded-box h-14 bg-black text-white items-center mb-2 flex flex-row justify-between">
+          <div className="brand-logo text-sm font-extrabold px-2 ">
             <Link to="/">{title}</Link>
           </div>
           <div className="">
             {/**Main List */}
             <ul className="hidden lg:menu-list lg:flex lg:flex-row text-xs font-bold ">
-              <li className="menu-list-item">
-                <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
+              <li className="menu-list-item ">
+                <Link to="/" className="btn btn-ghost btn-sm rounded-btn ">
                   Home
                 </Link>
               </li>
               <li className="menu-list-item">
-                <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
+                <Link
+                  to="/about"
+                  className="btn btn-ghost btn-sm rounded-btn active"
+                  aria-current="true"
+                >
                   About
                 </Link>
               </li>
