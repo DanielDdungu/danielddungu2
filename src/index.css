@@ -16,3 +16,15 @@
     --navbar-padding: 0.5rem;    /* default padding for navbar */
     --border-btn: 1px;          /* default border size for button */
   }
+
+  :root {
+    --color-default: #fff;
+  }
+  @media (prefers-color-scheme: dark){
+      :root{
+          --color-default: #252b30;
+      }
+  }
+  body {
+	background-color: var(--color-default);
+}
