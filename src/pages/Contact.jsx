@@ -9,7 +9,7 @@ function Contact() {
           <h1 className="mb-5 text-2xl md:text-4xl lg:text-4xl font-bold">
             Get In Touch
           </h1>
-          <p className="mb-5 text-justify">
+          <p className="mb-5 text-justify text-white">
             <span>
               I'd love to hear from you. If you would like more information
               about working with me, please fiil out the form with tthe detailed
@@ -33,7 +33,7 @@ function Contact() {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span classMame="label-text">Email</span>
+                  <span classMame="label-text ">Email</span>
                 </label>
                 <input
                   placeholder="Email"

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="hero min-h-screen bg-gray-800 rounded-box">
+    <div className="hero min-h-screen bg-black rounded-box">
       <video
         autoPlay
         loop
@@ -27,13 +27,13 @@ const Home = () => {
 
         <div>
           <h1 className="mb-5 text-5xl font-bold">I'm Daniel</h1>
-          <p className="mb-5 font-medium ... md:text-sm">
+          <p className="mb-5 font-medium ... md:text-sm text-white">
             Welcome to my world of digital tranformation. I am in this with my
             heart, not my ego’s, &nbsp; I want to tranform the world a little
             better.
             <br />
           </p>
-          <p className="mb-5 font-bold ... ">
+          <p className="mb-5 font-bold ... text-white">
             I AM PASSIONATE ABOUT..
             <ReactTypingEffect
               className=""

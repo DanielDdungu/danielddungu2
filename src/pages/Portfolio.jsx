@@ -7,7 +7,7 @@ import coming from "../components/layout/assets/projects/coming.png";
 function Portfolio() {
   return (
     <div className="w-full bg-black rounded-box">
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12 ">
+      <section className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-4 py-12 ">
         <div className="text-center pb-12">
           <h2 className="text-base font-bold text-white">
             We have the best equipment in the market
