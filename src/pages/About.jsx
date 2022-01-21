@@ -35,7 +35,7 @@ function About() {
               developing web applications using HTML5, CSS3, JavaScript and
               React Js.
             </p>
-            <p className="md:text-base text-white-700 text-justify mb-2 text-white-500">
+            <p className="md:text-base text-white-700 text-justify text-white mb-2 text-white-500">
               Proficient with Content Management Systems (Wordpress+Woo-commerce
               and Prestashop), E-Commerce and Digital Marketing & Social Media
               Management.
@@ -52,13 +52,18 @@ function About() {
       </div>
       {/**INTERESTS*/}
       <div className="bg-black my-3 rounded-box">
-        <p className="pt-3 pl-3">PRO SKILLS</p>
+        <h3 className="pt-3 pl-3 text-white">PRO SKILLS</h3>
         <div className="card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-6 p-3">
           <div className="">
             <div className="flex flex-row justify-between">
               <div className="flex flex-row">
                 <FaHtml5 size={30} className=" " color={"#F16529"} />
-                <button class="btn btn-sm btn-ghost loading">HTML</button>
+                <button
+                  class="btn btn-sm btn-ghost loading  background-color: white;
+                  border-color: white;"
+                >
+                  HTML
+                </button>
               </div>
               <p className=" text-white">99%</p>
             </div>

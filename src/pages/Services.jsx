@@ -7,7 +7,9 @@ function Services() {
   return (
     <div className="conainer  bg-black rounded-box">
       <div className="">
-        <p className="mb-5 text-2xl font-bold pt-6 pl-8">MY SERVICES</p>
+        <p className="mb-5 text-2xl font-bold pt-6 pl-8 text-white">
+          MY SERVICES
+        </p>
       </div>
       <div className="p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3">
         <div className="drop-shadow-2xl ... glass rounded-box hover:bg-base-100 ">
@@ -24,7 +26,7 @@ function Services() {
           <h4 className="text-center text-sky-400 uppercase card-title">
             Digital Marketing
           </h4>
-          <p className="text-center p-8">
+          <p className="text-center p-8 text-white">
             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
             in laying out print, graphic or web designs. The passage is
             attributed to an unknown typesetter in the 15th century who is
@@ -45,7 +47,7 @@ function Services() {
           <h4 className="text-center text-sky-400 uppercase card-title ">
             Web Design & Development
           </h4>
-          <p className="text-center p-8 md:text-sm">
+          <p className="text-center text-white p-8 md:text-sm">
             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
             in laying out print, graphic or web designs. The passage is
             attributed to an unknown typesetter in the 15th century who is
@@ -66,7 +68,7 @@ function Services() {
           <h4 className="text-center text-sky-400 uppercase card-title">
             E-commerce
           </h4>
-          <p className="text-center p-8">
+          <p className="text-center p-8 text-white">
             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
             in laying out print, graphic or web designs. The passage is
             attributed to an unknown typesetter in the 15th century who is

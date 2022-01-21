@@ -26,7 +26,7 @@ const Home = () => {
         </div>
 
         <div>
-          <h1 className="mb-5 text-5xl font-bold">I'm Daniel</h1>
+          <h1 className="mb-5 text-5xl font-bold text-white">I'm Daniel</h1>
           <p className="mb-5 font-medium ... md:text-sm text-white text-justify">
             Welcome to my world of digital tranformation. I am in this with my
             heart, not my ego’s, &nbsp; I want to tranform the world a little
