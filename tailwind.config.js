@@ -5,9 +5,6 @@ module.exports = {
       height: {
         128: "32rem",
       },
-      cursor: {
-        fancy: "url(hand.cur), pointer",
-      },
     },
     screens: {
       sm: "640px",
@@ -27,4 +24,12 @@ module.exports = {
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    styled: true,
+    themes: true,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+  },
 };
