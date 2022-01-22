@@ -1,4 +1,4 @@
-import daniel from "../components/layout/assets/daniel.png";
+import daniel from "../components/layout/assets/daniel.webp";
 import {
   FaHtml5,
   FaCss3,

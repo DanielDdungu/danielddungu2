@@ -1,8 +1,8 @@
-import Github from "../components/layout/assets/projects/Github.png";
-import Quiz from "../components/layout/assets/projects/Quiz.png";
-import Shina from "../components/layout/assets/projects/Shina.png";
-import estate from "../components/layout/assets/projects/estate.png";
-import coming from "../components/layout/assets/projects/coming.png";
+import Github from "../components/layout/assets/projects/Github.webp";
+import Quiz from "../components/layout/assets/projects/Quiz.webp";
+import Shina from "../components/layout/assets/projects/Shina.webp";
+import estate from "../components/layout/assets/projects/estate.webp";
+import coming from "../components/layout/assets/projects/coming.webp";
 
 function Portfolio() {
   return (

@@ -1,7 +1,5 @@
-import daniel from "../components/layout/assets/daniel.png";
+import daniel from "../components/layout/assets/daniel.webp";
 import background from "../components/layout/assets/background.webm";
-//import background2 from "../components/layout/assets/background.webm";
-//import background3 from "../components/layout/assets/background.mov";
 
 import ReactTypingEffect from "react-typing-effect";
 import { Link } from "react-router-dom";
@@ -11,13 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="hero min-h-screen bg-black rounded-box">
-      <video
-        autoPlay
-        loop
-        muted
-        id="video"
-        className="rounded-box hidden lg:block"
-      >
+      <video autoPlay loop muted id="video" className="rounded-box ">
         <source src={background} type="video/webm" />
       </video>
       <div className="flex-col hero-content lg:flex-row-reverse">

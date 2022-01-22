@@ -1,7 +1,7 @@
 import { HiCode, HiShoppingCart } from "react-icons/hi";
 import { FaSearchDollar } from "react-icons/fa";
-import digital from "../components/layout/assets/digital.jpg";
-import ecommere from "../components/layout/assets/ecommere.jpg";
+import digital from "../components/layout/assets/digital.webp";
+import ecommere from "../components/layout/assets/ecommere.webp";
 
 function Services() {
   return (
