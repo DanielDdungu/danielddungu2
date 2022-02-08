@@ -4,6 +4,7 @@ import Shina from "../components/layout/assets/projects/Shina.webp";
 import estate from "../components/layout/assets/projects/estate.webp";
 import coming from "../components/layout/assets/projects/coming.webp";
 import PageAnimation from "../components/layout/PageAnimation";
+import { motion } from "framer-motion";
 
 function Portfolio() {
     return (
@@ -19,7 +20,12 @@ function Portfolio() {
                         </h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                        {/**REAL EXTATE PROJECT */}
+                        <motion.div
+                            whileInView={{ scale: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center"
+                        >
                             <div>
                                 <img
                                     className="object-center object-cover h-auto w-full"
@@ -38,8 +44,13 @@ function Portfolio() {
                                     Learn more
                                 </button>
                             </div>
-                        </div>
-                        <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                        </motion.div>
+                        {/**SHINA FAM APPLICATION */}
+                        <motion.div
+                            whileInView={{ scale: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center"
+                        >
                             <div>
                                 <img
                                     className="object-center object-cover h-auto w-full"
@@ -58,8 +69,13 @@ function Portfolio() {
                                     Learn more
                                 </button>
                             </div>
-                        </div>
-                        <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                        </motion.div>
+                        {/**QUIZ APPLICATION */}
+                        <motion.div
+                            whileInView={{ scale: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center"
+                        >
                             <div>
                                 <img
                                     className="object-center object-cover h-auto w-full"
@@ -78,8 +94,13 @@ function Portfolio() {
                                     Learn more
                                 </button>
                             </div>
-                        </div>
-                        <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                        </motion.div>
+                        {/**GITHUB FINDER */}
+                        <motion.div
+                            whileInView={{ scale: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center"
+                        >
                             <div>
                                 <img
                                     className="object-center object-cover h-auto w-full"
@@ -98,8 +119,13 @@ function Portfolio() {
                                     Learn more
                                 </button>
                             </div>
-                        </div>
-                        <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                        </motion.div>
+                        {/**COMING SOON */}
+                        <motion.div
+                            whileInView={{ scale: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center"
+                        >
                             <div>
                                 <img
                                     className="object-center object-cover h-auto w-full"
@@ -118,8 +144,13 @@ function Portfolio() {
                                     Learn more
                                 </button>
                             </div>
-                        </div>
-                        <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                        </motion.div>
+                        {/**COMING SOON */}
+                        <motion.div
+                            whileInView={{ scale: 1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center"
+                        >
                             <div>
                                 <img
                                     className="object-center object-cover h-auto w-full"
@@ -138,7 +169,7 @@ function Portfolio() {
                                     Learn more
                                 </button>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </section>
             </div>

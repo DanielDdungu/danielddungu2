@@ -13,7 +13,7 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
     return (
-        <AnimatePresence>
+        <AnimatePresence exitBeforeEnter>
             <Router>
                 <div className="flex flex-col justify-between h-screenshot">
                     <Navbar />
