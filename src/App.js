@@ -8,23 +8,18 @@ import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
-import {
-    BrowserRouter as Router,
-    Route,
-    Routes,
-    useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
-    const location = useLocation();
     return (
-        <Router>
-            <div className="flex flex-col justify-between h-screenshot">
-                <Navbar />
-                <AnimatePresence exitBeforeEnter initial={false}>
+        <AnimatePresence>
+            <Router>
+                <div className="flex flex-col justify-between h-screenshot">
+                    <Navbar />
+
                     <main className="conatiner  px-4 flex-grow">
-                        <Routes key={location.pathname} location={location}>
+                        <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/services" element={<Services />} />
@@ -35,10 +30,11 @@ function App() {
                             <Route path="*" element={<NotFound />} />
                         </Routes>
                     </main>
-                </AnimatePresence>
-                <Footer />
-            </div>
-        </Router>
+
+                    <Footer />
+                </div>
+            </Router>
+        </AnimatePresence>
     );
 }
 
