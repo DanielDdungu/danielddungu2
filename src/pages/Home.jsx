@@ -58,11 +58,11 @@ const Home = () => {
                                         "E-COMMERCE",
                                     ]}
                                     cursorRenderer={(cursor) => (
-                                        <h1>{cursor}</h1>
+                                        <h2>{cursor}</h2>
                                     )}
                                     displayTextRenderer={(text, i) => {
                                         return (
-                                            <h1>
+                                            <h2>
                                                 {text
                                                     .split("")
                                                     .map((char, i) => {
@@ -88,7 +88,7 @@ const Home = () => {
                                                             </span>
                                                         );
                                                     })}
-                                            </h1>
+                                            </h2>
                                         );
                                     }}
                                 />

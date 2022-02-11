@@ -15,9 +15,9 @@ function Resume() {
                 <div className="hero min-h-screen bg-black rounded-box">
                     <div className="text-center hero-content">
                         <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold text-white">
+                            <h2 className="mb-5 text-5xl font-bold text-white">
                                 Hello there
-                            </h1>
+                            </h2>
                             <p className="mb-5 text-white">
                                 Provident cupiditate voluptatem et in. Quaerat
                                 fugiat ut assumenda excepturi exercitationem
