@@ -26,12 +26,14 @@ function Portfolio() {
                 <div className="w-full bg-black rounded-box">
                     <section className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-4 py-12 ">
                         <div className="text-center pb-12">
-                            <h2 className="text-base font-bold text-white">
+                            <h2 className="text-base font-bold text-white md:text-2xl lg:text-5xl">
                                 Networthy Projects
                             </h2>
-                            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
-                                Check a few of my awesome projects
-                            </h2>
+                            <p className=" md:text-xl lg:text-2xl font-heading text-white mt-4">
+                                A great website design portfolio that speaks for
+                                itself. The website done out of passion with
+                                kind attention to technical performance and SEO
+                            </p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {/**REAL EXTATE PROJECT */}
@@ -106,7 +108,7 @@ function Portfolio() {
                                     </p>
                                     <button class="btn glass mt-3 normal-case">
                                         <a
-                                            href="https://vercel.com/danielddungu/sorting-hat-application"
+                                            href="https://danielddungu/sorting-hat-application"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
