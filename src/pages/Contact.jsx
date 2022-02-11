@@ -1,8 +1,33 @@
-//import { motion } from "framer-motion";
-//import { Link } from "react-router-dom";
 import PageAnimation from "../components/layout/PageAnimation";
 import { Helmet } from "react-helmet-async";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
+import { toast } from "react-toastify";
+
 function Contact() {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_31ruo1y",
+                "template_kh3sesk",
+                form.current,
+                "YOUR_USER_ID"
+            )
+            .then(
+                (result) => {
+                    toast.success("Email sent successfully");
+                },
+                (error) => {
+                    toast.error("Email not sent");
+                }
+            );
+
+        e.target.reset();
+    };
+
     return (
         <>
             <Helmet>
@@ -32,7 +57,7 @@ function Contact() {
                         </div>
                         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                             <div className="card-body">
-                                <form>
+                                <form onSubmit={sendEmail} ref={form}>
                                     <div className="form-control">
                                         <label className="label">
                                             <span classMame="label-text">
@@ -43,6 +68,7 @@ function Contact() {
                                             placeholder="Name"
                                             className="input input-bordered bg-base-200"
                                             type="text"
+                                            name="name"
                                         />
                                     </div>
                                     <div className="form-control">
@@ -55,6 +81,7 @@ function Contact() {
                                             placeholder="Email"
                                             className="input input-bordered peer ... bg-base-200"
                                             type="email"
+                                            name="email"
                                         />
                                         <p className="mt-2 invisible peer-invalid:visible text-red-600 text-sm">
                                             Please provide a valid email
@@ -71,6 +98,7 @@ function Contact() {
                                             placeholder="Subject"
                                             className="input input-bordered bg-base-200"
                                             type="text"
+                                            name="subject"
                                         />
                                     </div>
                                     <div className="form-control">
@@ -82,11 +110,12 @@ function Contact() {
                                         <textarea
                                             className="textarea h-24 textarea-bordered bg-base-200"
                                             placeholder="Message"
+                                            name="message"
                                         ></textarea>
                                     </div>
                                     <div className="form-control mt-6">
                                         <input
-                                            type="button"
+                                            type="submit"
                                             value="Send"
                                             className="btn btn-primary"
                                         />
