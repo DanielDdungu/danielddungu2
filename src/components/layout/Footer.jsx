@@ -6,10 +6,10 @@ import { SiDogecoin } from "react-icons/si";
 function Footer() {
     return (
         <div className="px-4  mt-2">
-            <footer class="py-10 footer bg-black text-primary-content footer-center rounded-box">
+            <footer className="py-10 footer bg-black text-primary-content footer-center rounded-box">
                 <div>
                     <SiDogecoin />
-                    <p class="font-bold">
+                    <p className="font-bold">
                         Daniel Ddungu.
                         <br />
                         Providing reliable web services
@@ -17,14 +17,14 @@ function Footer() {
                     <p>Copyright © 2022 - All right reserved</p>
                 </div>
                 <div className="sr-only sm:not-sr-only">
-                    <div class="grid grid-flow-col gap-4">
+                    <div className="grid grid-flow-col gap-4">
                         <button className="btn btn-square btn-ghost">
                             <a
                                 href="https://github.com/DanielDdungu"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FaGithub size={32} color />
+                                <FaGithub size={32} />
                             </a>
                         </button>
                         <button className="btn btn-square btn-ghost">

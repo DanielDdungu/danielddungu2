@@ -60,7 +60,7 @@ function Contact() {
                                 <form onSubmit={sendEmail} ref={form}>
                                     <div className="form-control">
                                         <label className="label">
-                                            <span classMame="label-text">
+                                            <span className="label-text">
                                                 Name
                                             </span>
                                         </label>
@@ -73,7 +73,7 @@ function Contact() {
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
-                                            <span classMame="label-text ">
+                                            <span className="label-text ">
                                                 Email
                                             </span>
                                         </label>
@@ -90,7 +90,7 @@ function Contact() {
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
-                                            <span classMame="label-text">
+                                            <span className="label-text">
                                                 Subject
                                             </span>
                                         </label>
