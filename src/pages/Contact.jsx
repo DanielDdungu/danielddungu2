@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 import { toast } from "react-toastify";
+import { init } from "@emailjs/browser";
+init("user_h0VARgd2pAxHyyX4fkSLa");
 
 function Contact() {
     const form = useRef();
@@ -14,7 +16,7 @@ function Contact() {
                 "service_31ruo1y",
                 "template_kh3sesk",
                 form.current,
-                "YOUR_USER_ID"
+                "user_h0VARgd2pAxHyyX4fkSLa"
             )
             .then(
                 (result) => {
