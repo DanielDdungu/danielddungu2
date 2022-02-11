@@ -240,7 +240,7 @@ function Portfolio() {
                                     </p>
                                     <button class="btn glass mt-3 normal-case">
                                         <a
-                                            href="https://smartwatchsolutions.com//"
+                                            href="https://veronicadecorations.com/"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
