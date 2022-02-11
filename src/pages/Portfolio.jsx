@@ -8,7 +8,7 @@ import personalvehicle from "../components/layout/assets/projects/personalvehicl
 import sorting from "../components/layout/assets/projects/sorting.jpg";
 import veronicadecorations from "../components/layout/assets/projects/veronicadecorations.jpg";
 import PageAnimation from "../components/layout/PageAnimation";
-import { motion } from "framer-motion";
+
 import { Helmet } from "react-helmet-async";
 
 function Portfolio() {
