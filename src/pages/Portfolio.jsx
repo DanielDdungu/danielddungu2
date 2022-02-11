@@ -108,7 +108,7 @@ function Portfolio() {
                                     </p>
                                     <button class="btn glass mt-3 normal-case">
                                         <a
-                                            href="https://danielddungu/sorting-hat-application"
+                                            href="https://sorting-hat-application.vercel.app/"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
