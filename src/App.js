@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { Helmet } from "react-helmet";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -16,6 +17,15 @@ function App() {
         <AnimatePresence exitBeforeEnter>
             <Router>
                 <div className="flex flex-col justify-between h-screenshot">
+                    <Helmet>
+                        <title>Daniel Ddungu Portfolio</title>
+                        <meta
+                            name="description"
+                            content="Front End Developer | Javascript | ReactJS |
+                    VueJS"
+                        />
+                        <meta name="theme-color" content="#000000" />
+                    </Helmet>
                     <Navbar />
 
                     <main className="conatiner  px-4 flex-grow">
