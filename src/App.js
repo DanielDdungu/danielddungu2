@@ -7,7 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
