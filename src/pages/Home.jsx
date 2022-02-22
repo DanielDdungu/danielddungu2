@@ -10,7 +10,9 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Home</title>
+                <title>
+                    Home - Front End Developer | Javascript | ReactJS | VueJS
+                </title>
                 <meta
                     name="description"
                     content="Front End Developer | Javascript | ReactJS | VueJS"

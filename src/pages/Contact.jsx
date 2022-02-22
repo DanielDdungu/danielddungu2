@@ -33,7 +33,9 @@ function Contact() {
     return (
         <>
             <Helmet>
-                <title>About</title>
+                <title>
+                    Contact - Front End Developer | Javascript | ReactJS | VueJS
+                </title>
                 <meta
                     name="description"
                     content="Front End Developer | Javascript | ReactJS | VueJS"

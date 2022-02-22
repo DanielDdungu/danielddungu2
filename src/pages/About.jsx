@@ -24,7 +24,9 @@ function About() {
     return (
         <>
             <Helmet>
-                <title>About</title>
+                <title>
+                    About - Front End Developer | Javascript | ReactJS | VueJS
+                </title>
                 <meta
                     name="description"
                     content="Front End Developer | Javascript | ReactJS | VueJS"

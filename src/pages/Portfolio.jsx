@@ -15,7 +15,10 @@ function Portfolio() {
     return (
         <>
             <Helmet>
-                <title>Portfolio</title>
+                <title>
+                    Portfolio - Front End Developer | Javascript | ReactJS |
+                    VueJS
+                </title>
                 <meta
                     name="description"
                     content="Front End Developer | Javascript | ReactJS | VueJS"

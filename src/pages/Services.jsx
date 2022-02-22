@@ -17,7 +17,10 @@ function Services() {
     return (
         <>
             <Helmet>
-                <title>Home</title>
+                <title>
+                    Services - Front End Developer | Javascript | ReactJS |
+                    VueJS
+                </title>
                 <meta
                     name="description"
                     content="Front End Developer | Javascript | ReactJS | VueJS"

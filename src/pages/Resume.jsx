@@ -4,7 +4,9 @@ function Resume() {
     return (
         <>
             <Helmet>
-                <title>Resume</title>
+                <title>
+                    Resume - Front End Developer | Javascript | ReactJS | VueJS
+                </title>
                 <meta
                     name="description"
                     content="Front End Developer | Javascript | ReactJS | VueJS"

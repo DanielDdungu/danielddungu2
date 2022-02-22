@@ -6,7 +6,10 @@ function NotFound() {
     return (
         <>
             <Helmet>
-                <title>NotFound</title>
+                <title>
+                    NotFound - Front End Developer | Javascript | ReactJS |
+                    VueJS
+                </title>
                 <meta
                     name="description"
                     content="Front End Developer | Javascript | ReactJS | VueJS"
