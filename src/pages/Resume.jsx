@@ -1,6 +1,8 @@
 import PageAnimation from "../components/layout/PageAnimation";
 import { Helmet } from "react-helmet-async";
 function Resume() {
+    const resume =
+        '"..... The first time I emailed my new resume out, I recieved an offer for a telephone interview. You will not be disappointed!!!"';
     return (
         <>
             <Helmet>
@@ -20,12 +22,7 @@ function Resume() {
                             <h2 className="mb-5 text-5xl font-bold text-white">
                                 Hello there
                             </h2>
-                            <p className="mb-5 text-white">
-                                Provident cupiditate voluptatem et in. Quaerat
-                                fugiat ut assumenda excepturi exercitationem
-                                quasi. In deleniti eaque aut repudiandae et a id
-                                nisi.
-                            </p>
+                            <p className="mb-5 text-white">{resume}</p>
                             <div className="dropdown dropdown-end">
                                 <div tabindex="0" className="m-1 btn">
                                     RESUME
