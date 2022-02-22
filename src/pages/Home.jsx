@@ -95,11 +95,13 @@ const Home = () => {
                                     }}
                                 />
                             </p>
-                            <Link to="/contact">
-                                <button className="btn btn-primary">
-                                    CONTACT ME
-                                </button>
-                            </Link>
+                            <div className="button-border my-6">
+                                <Link to="/contact">
+                                    <button className="button font-medium">
+                                        CONTACT ME
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
