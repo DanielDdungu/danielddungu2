@@ -2,7 +2,7 @@ import Github from "../components/layout/assets/projects/Github.webp";
 import Quiz from "../components/layout/assets/projects/Quiz.webp";
 import Shina from "../components/layout/assets/projects/Shina.webp";
 import estate from "../components/layout/assets/projects/estate.webp";
-import coming from "../components/layout/assets/projects/coming.webp";
+import Translinguo from "../components/layout/assets/projects/Translinguo.jpg";
 import joomarexplolers from "../components/layout/assets/projects/joomarexplorers.jpg";
 import personalvehicle from "../components/layout/assets/projects/personalvehicle.jpg";
 import sorting from "../components/layout/assets/projects/sorting.jpg";
@@ -211,10 +211,10 @@ function Portfolio() {
                                 </div>
                                 <div className="text-center py-8 sm:py-6">
                                     <p className="text-xl text-white font-bold mb-2">
-                                        Github Finder
+                                        Elparking Qizz Test
                                     </p>
                                     <p className="text-base text-gray-400 font-normal">
-                                        Github Finder Appliation
+                                        El Parking Quiz Test
                                     </p>
                                     <button class="btn glass mt-3 normal-case">
                                         <a
@@ -259,7 +259,7 @@ function Portfolio() {
                                 <div>
                                     <img
                                         className="object-center object-cover h-auto w-full"
-                                        src={coming}
+                                        src={Translinguo}
                                         alt="project"
                                     />
                                 </div>
