@@ -2,7 +2,7 @@ import Github from "../components/layout/assets/projects/Github.webp";
 import Quiz from "../components/layout/assets/projects/Quiz.webp";
 import Shina from "../components/layout/assets/projects/Shina.webp";
 import estate from "../components/layout/assets/projects/estate.webp";
-import Translinguo from "../components/layout/assets/projects/Translinguo.jpg";
+import Translinguo from "../components/layout/assets/projects/Translinguo.png";
 import joomarexplolers from "../components/layout/assets/projects/joomarexplorers.jpg";
 import personalvehicle from "../components/layout/assets/projects/personalvehicle.jpg";
 import sorting from "../components/layout/assets/projects/sorting.jpg";
