@@ -77,7 +77,7 @@ function About() {
                                         color={"#F16529"}
                                     />
                                     <button
-                                        class="btn btn-sm btn-ghost loading  background-color: white;
+                                        className="btn btn-sm btn-ghost loading  background-color: white;
                   border-color: white;"
                                     >
                                         HTML
@@ -86,7 +86,7 @@ function About() {
                                 <p className=" text-white">99%</p>
                             </div>
                             <progress
-                                class="progress progress-info rounded-none border-radius:none "
+                                className="progress progress-info rounded-none border-radius:none "
                                 value="100"
                                 max="100"
                             ></progress>
@@ -97,7 +97,7 @@ function About() {
                                     <FaCss3 size={30} color={"#264de4"} />
                                     <button
                                         color="#264de4 !important"
-                                        class="btn btn-sm btn-ghost loading"
+                                        className="btn btn-sm btn-ghost loading"
                                     >
                                         CSS3
                                     </button>
@@ -105,7 +105,7 @@ function About() {
                                 <p className=" text-white">95%</p>
                             </div>
                             <progress
-                                class="progress progress-info"
+                                className="progress progress-info"
                                 value="95"
                                 max="100"
                             ></progress>
@@ -114,14 +114,14 @@ function About() {
                             <div className="flex flex-row justify-between">
                                 <div className="flex flex-row">
                                     <FaJsSquare size={30} color={"#f0db4f"} />
-                                    <button class="btn btn-sm btn-ghost loading">
+                                    <button className="btn btn-sm btn-ghost loading">
                                         JavaScript
                                     </button>
                                 </div>
                                 <p className=" text-white">80%</p>
                             </div>
                             <progress
-                                class="progress progress-info"
+                                className="progress progress-info"
                                 value="80"
                                 max="100"
                             ></progress>
@@ -130,14 +130,14 @@ function About() {
                             <div className="flex flex-row justify-between">
                                 <div className="flex flex-row">
                                     <FaReact size={30} color={"#61DBFB"} />
-                                    <button class="btn btn-sm btn-ghost loading">
+                                    <button className="btn btn-sm btn-ghost loading">
                                         React
                                     </button>
                                 </div>
                                 <p className=" text-white">76%</p>
                             </div>
                             <progress
-                                class="progress progress-info"
+                                className="progress progress-info"
                                 value="76"
                                 max="100"
                             ></progress>
@@ -146,14 +146,14 @@ function About() {
                             <div className="flex flex-row justify-between">
                                 <div className="flex flex-row">
                                     <FaSass size={30} color={"#cd6799"} />
-                                    <button class="btn btn-sm btn-ghost loading">
+                                    <button className="btn btn-sm btn-ghost loading">
                                         Sass
                                     </button>
                                 </div>
                                 <p className=" text-white">83.5%</p>
                             </div>
                             <progress
-                                class="progress progress-info"
+                                className="progress progress-info"
                                 value="83"
                                 max="100"
                             ></progress>
@@ -162,14 +162,14 @@ function About() {
                             <div className="flex flex-row justify-between">
                                 <div className="flex flex-row">
                                     <SiRedux size={30} color={"#764abc"} />
-                                    <button class="btn btn-sm btn-ghost loading">
+                                    <button className="btn btn-sm btn-ghost loading">
                                         Redux
                                     </button>
                                 </div>
                                 <p className=" text-white"> 50 %</p>
                             </div>
                             <progress
-                                class="progress progress-info"
+                                className="progress progress-info"
                                 value="50"
                                 max="100"
                             ></progress>
@@ -180,7 +180,7 @@ function About() {
                 {/**INTERESTS*/}
                 <div className="bg-black my-3 rounded-box">
                     <h3 className="pt-3 pl-3 text-white">INTERESTS</h3>
-                    <div class=" card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 ">
+                    <div className=" card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 ">
                         <div className="flex flex-auto bg-gray-700 p-3 rounded-md pl-6 drop-shadow-2xl ... ">
                             <FaGitAlt size={30} color={"#f34f29"} />
                             <p className="pl-6 text-white">Git</p>
