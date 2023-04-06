@@ -53,7 +53,7 @@ function Contact() {
                                 <span>
                                     I'd love to hear from you. If you would like
                                     more information about working with me,
-                                    please fiil out the form with tthe detailed
+                                    please fill out the form with the detailed
                                     description of your project, and I will
                                     respond as soon as possible
                                 </span>

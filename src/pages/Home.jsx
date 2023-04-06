@@ -44,9 +44,9 @@ const Home = () => {
                                 I'm Daniel
                             </h1>
                             <p className="mb-5 font-medium ... md:text-sm text-white text-justify">
-                                Welcome to my world of digital tranformation. I
+                                Welcome to my world of digital transformation. I
                                 am in this with my heart, not my ego’s, &nbsp; I
-                                want to tranform the world a little better.
+                                want to transform the world a little better.
                                 <br />
                             </p>
                             <p className="mb-5 font-bold ... text-white">
