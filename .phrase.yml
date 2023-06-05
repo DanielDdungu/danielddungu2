@@ -1,0 +1,13 @@
+phrase:
+  access_token: f905361f748d78da0aeff193557ac18e0cc9fd602f1b4a53b4cb79610c37635b
+  project_id: fe181acb90a84b5d63c667c09ab55751
+  push:
+    sources:
+    - file: ./<locale_name>.json
+      params:
+        file_format: react_simple_json
+  pull:
+    targets:
+    - file: package.json
+      params:
+        file_format: react_simple_json
