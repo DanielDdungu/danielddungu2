@@ -1,4 +1,4 @@
-import Navbar from "./components/layout/Navbar";
+import Nav2 from "./components/layout/Nav2";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -26,7 +26,7 @@ function App() {
                         />
                         <meta name="theme-color" content="#000000" />
                     </Helmet>
-                    <Navbar />
+                    <Nav2 />
 
                     <main className="conatiner  px-4 flex-grow">
                         <Routes>
